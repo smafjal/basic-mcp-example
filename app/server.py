@@ -27,4 +27,10 @@ def divide(a: float, b: float) -> float:
 
 
 if __name__ == "__main__":
+    """When using Stdio transport, you will typically not run the server yourself as a separate process. 
+    Rather, your clients will spin up a new server process for each session. 
+    As such, no additional configuration is required."""
+    # mcp.run(transport="stdio") 
+
     mcp.run(transport="http", host="localhost", port=8000)
+
